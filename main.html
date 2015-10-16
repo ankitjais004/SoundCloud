@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Connect with SoundCloud</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <h1> Welcome to SoundCloud App </h1>
+
+    <div id="auth">
+      <p> First of all Authenticate Your app </p>
+      <button class="authenticate">Authenticate Your account</button><br/><br/>
+    </div>
+
+
+    <div id="upl">
+      <h2> Uploading a track </h2>
+      Select a track
+      <input type="file" id="fileInput"><br>
+      <input type="text" id="title" placeholder="Give a title">
+      <button class="upload"> Upload</button>
+      </div>
+
+      <div id="trk">
+        <h3> List of Your Tracks</h3>
+        <ul id="trackss">
+        </ul>
+        <div id="target">
+        </div>
+        <button class="tracks">Refresh</button><br/><br/>
+         </div>
+  </body>
+</html>
